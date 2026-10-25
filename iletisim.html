@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+        <h1>Kişisel Web Sitem</h1>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Ana Sayfa</a></li>
+                 <li><a href="hakkimda.html">Hakkımda</a></li>
+                 <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>İletişim Formu</h2>
+            <form>
+                <div>
+                    <label for="a">Adınız:</label>
+                    <input type="text" id="ad" name="ad" required minlength="3">
+
+                </div>
+                <div>
+                    <label for="e-posta">E-Posta</label>
+                    <input type="email" id="e-posta" name="e-posta" required>
+                </div>
+                <div>
+                    <label for="konu">Konu Seçiniz:</label>
+                    <select id="konu" name="konu">
+                        <option value="genel">Genel Soru</option>
+                        <option value="oneri">Öneri</option>
+                        <option value="is">İş Birliği</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tarih">Ziyaret Tarihi:</label>
+                    <input type="date" id="tarih" name="tarih">
+                </div>
+                <div>
+                    <label for="kod">Özel kod(Örn:ABC-1234):</label>
+                    <input type="text" id="kod" name="kod" pattern="[A-Z]{3}-[0-9]{4}" title="Lütfen 3 büyük harf,tire ve 4 rakamını girin(Örn:ABC-1234)">
+
+                </div>
+                <div>
+                    <label>Sitemizi Nasıl Buldunuz?</label><br>
+                    <input type="radio" id="arama" name="ulasim" value="arama">
+                    <label for="arama">Arama Motoru</label><br>
+                    <input type="radio" id="sosyal" name="ulasim" value="sosyal">
+                    <label for="sosyal">Sosyal Medya</label>
+                </div>
+                <div>
+                    <label for="mesaj">Mesajınız:</label><br>
+                    <textarea id="mesaj" name="mesaj" required maxlength="500" rows="5" cols="40"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Gönder</button>
+                    <button type="reset">Temizle</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy:2026-Tüm hakları saklıdırr.</p>
+    </footer>
+</body>
+</html>
